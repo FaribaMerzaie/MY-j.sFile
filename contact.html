@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fds">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="">Jewelry</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </section>
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 fade-up">
+                <img src="./Pectuers/photo_2026-05-06_23-44-30.jpg" class="img-fluid rounded img-box">
+            </div>
+            <div class="col-md-6 fade-up">
+                <h2 class="text-center mb-4">Checkout</h2>
+                <div class="row">
+                    <!-- 🧾 FORM -->
+                    <div class="col-md-6">
+                        <form id="checkout-form">
+                            <div class="mb-3">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="name">
+                                <small class="text-danger error" id="name-error"></small>
+                            </div>
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                    <small class="text-danger error" id="email-error"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Phone</label>
+                                    <input type="text" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label>Address</label>
+                                    <textarea class="form-control" id="address"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Payment Method</label>
+                                    <select class="form-control" id="payment">
+                                        <option value="">Select</option>
+                                        <option>Cash</option>
+                                        <option>Card</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-success w-100">Place Order</button>
+                        </form>
+                    </div>
+                    <!-- سفارش-->
+                    <div class="col-md-6">
+                        <h4>Your Order</h4>
+                        <div id="order-items"></div>
+                        <h5 class="mt-3" id="order-total"></h5>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer class="custom-navbar text-white text-center p-3">
+        <div class="social-icons">
+            <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+            <a href="@Merzaie_Fa"><i class="fa-brands fa-telegram"></i></a>
+            <a href="+93780386903"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="farinamerzaie561@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>© 2026 Jewelry Shop</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
